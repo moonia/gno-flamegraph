@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="454" onload="init(evt)" viewBox="0 0 1200 454" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="214" onload="init(evt)" viewBox="0 0 1200 214" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -422,109 +422,93 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="454.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="214.0" fill="url(#background)"  />
 <text id="title" x="600.00" y="24" >Flame Graph</text>
-<text id="details" x="10.00" y="437" > </text>
+<text id="details" x="10.00" y="197" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
 <text id="search" x="1090.00" y="24" >Search</text>
 <text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="437" > </text>
+<text id="matched" x="1090.00" y="197" > </text>
 <g id="frames">
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="293" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="303.5" >main.fib</text>
+<title>runtime.semawakeup (49 samples, 5.79%)</title><rect x="1121.7" y="53" width="68.3" height="15.0" fill="rgb(234,137,32)" rx="2" ry="2" />
+<text  x="1124.65" y="63.5" >runtime..</text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="325" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="335.5" >main.fib</text>
+<title>runtime.startm (49 samples, 5.79%)</title><rect x="1121.7" y="85" width="68.3" height="15.0" fill="rgb(220,71,17)" rx="2" ry="2" />
+<text  x="1124.65" y="95.5" >runtime..</text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="85" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="95.5" >main.fib</text>
+<title>runtime.pthread_cond_signal (49 samples, 5.79%)</title><rect x="1121.7" y="37" width="68.3" height="15.0" fill="rgb(211,28,6)" rx="2" ry="2" />
+<text  x="1124.65" y="47.5" >runtime..</text>
 </g>
 <g >
-<title>all (1 samples, 100%)</title><rect x="10.0" y="405" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
-<text  x="13.00" y="415.5" ></text>
+<title>runtime.notewakeup (49 samples, 5.79%)</title><rect x="1121.7" y="69" width="68.3" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="1124.65" y="79.5" >runtime..</text>
 </g>
 <g >
-<title>main.main (1 samples, 100.00%)</title><rect x="10.0" y="373" width="1180.0" height="15.0" fill="rgb(227,101,24)" rx="2" ry="2" />
-<text  x="13.00" y="383.5" >main.main</text>
+<title>runtime.libcCall (26 samples, 3.07%)</title><rect x="1064.5" y="69" width="36.2" height="15.0" fill="rgb(226,96,23)" rx="2" ry="2" />
+<text  x="1067.47" y="79.5" >run..</text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="213" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="223.5" >main.fib</text>
+<title>runtime.pMask.set (1 samples, 0.12%)</title><rect x="1120.3" y="69" width="1.4" height="15.0" fill="rgb(205,4,0)" rx="2" ry="2" />
+<text  x="1123.26" y="79.5" ></text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="197" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="207.5" >main.fib</text>
+<title>time.Since (767 samples, 90.66%)</title><rect x="49.1" y="117" width="1069.8" height="15.0" fill="rgb(215,46,11)" rx="2" ry="2" />
+<text  x="52.05" y="127.5" >time.Since</text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="261" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="271.5" >main.fib</text>
+<title>time.runtimeNano (13 samples, 1.54%)</title><rect x="1100.7" y="101" width="18.2" height="15.0" fill="rgb(237,147,35)" rx="2" ry="2" />
+<text  x="1103.73" y="111.5" ></text>
 </g>
 <g >
-<title>main.profile (1 samples, 100.00%)</title><rect x="10.0" y="357" width="1180.0" height="15.0" fill="rgb(232,126,30)" rx="2" ry="2" />
-<text  x="13.00" y="367.5" >main.profile</text>
+<title>runtime.goschedImpl (50 samples, 5.91%)</title><rect x="1120.3" y="117" width="69.7" height="15.0" fill="rgb(247,194,46)" rx="2" ry="2" />
+<text  x="1123.26" y="127.5" >runtime..</text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="149" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="159.5" >main.fib</text>
+<title>runtime.nanotime (727 samples, 85.93%)</title><rect x="86.7" y="101" width="1014.0" height="15.0" fill="rgb(230,116,27)" rx="2" ry="2" />
+<text  x="89.71" y="111.5" >runtime.nanotime</text>
 </g>
 <g >
-<title>main.runApp (1 samples, 100.00%)</title><rect x="10.0" y="341" width="1180.0" height="15.0" fill="rgb(227,101,24)" rx="2" ry="2" />
-<text  x="13.00" y="351.5" >main.runApp</text>
+<title>main.profile.func1 (796 samples, 94.09%)</title><rect x="10.0" y="149" width="1110.3" height="15.0" fill="rgb(253,225,53)" rx="2" ry="2" />
+<text  x="13.00" y="159.5" >main.profile.func1</text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="245" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="255.5" >main.fib</text>
+<title>time.subMono (1 samples, 0.12%)</title><rect x="1118.9" y="117" width="1.4" height="15.0" fill="rgb(208,15,3)" rx="2" ry="2" />
+<text  x="1121.87" y="127.5" ></text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="181" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="191.5" >main.fib</text>
+<title>main.fib (14 samples, 1.65%)</title><rect x="10.0" y="133" width="19.5" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="13.00" y="143.5" ></text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="53" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="63.5" >main.fib</text>
+<title>runtime.nanotime1 (690 samples, 81.56%)</title><rect x="138.3" y="85" width="962.4" height="15.0" fill="rgb(213,40,9)" rx="2" ry="2" />
+<text  x="141.32" y="95.5" >runtime.nanotime1</text>
 </g>
 <g >
-<title>runtime.main (1 samples, 100.00%)</title><rect x="10.0" y="389" width="1180.0" height="15.0" fill="rgb(209,21,5)" rx="2" ry="2" />
-<text  x="13.00" y="399.5" >runtime.main</text>
+<title>runtime.gopreempt_m (50 samples, 5.91%)</title><rect x="1120.3" y="133" width="69.7" height="15.0" fill="rgb(237,148,35)" rx="2" ry="2" />
+<text  x="1123.26" y="143.5" >runtime..</text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="37" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="47.5" >main.fib</text>
+<title>all (846 samples, 100%)</title><rect x="10.0" y="165" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<text  x="13.00" y="175.5" ></text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="309" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="319.5" >main.fib</text>
+<title>runtime.wakep (50 samples, 5.91%)</title><rect x="1120.3" y="101" width="69.7" height="15.0" fill="rgb(216,54,13)" rx="2" ry="2" />
+<text  x="1123.26" y="111.5" >runtime..</text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="229" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="239.5" >main.fib</text>
+<title>main.runApp (782 samples, 92.43%)</title><rect x="29.5" y="133" width="1090.8" height="15.0" fill="rgb(227,101,24)" rx="2" ry="2" />
+<text  x="32.53" y="143.5" >main.runApp</text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="165" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="175.5" >main.fib</text>
+<title>runtime.pidlegetSpinning (1 samples, 0.12%)</title><rect x="1120.3" y="85" width="1.4" height="15.0" fill="rgb(250,211,50)" rx="2" ry="2" />
+<text  x="1123.26" y="95.5" ></text>
 </g>
 <g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="101" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="111.5" >main.fib</text>
-</g>
-<g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="69" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="79.5" >main.fib</text>
-</g>
-<g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="117" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="127.5" >main.fib</text>
-</g>
-<g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="133" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="143.5" >main.fib</text>
-</g>
-<g >
-<title>main.fib (1 samples, 100.00%)</title><rect x="10.0" y="277" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="287.5" >main.fib</text>
+<title>runtime.morestack (50 samples, 5.91%)</title><rect x="1120.3" y="149" width="69.7" height="15.0" fill="rgb(219,67,16)" rx="2" ry="2" />
+<text  x="1123.26" y="159.5" >runtime..</text>
 </g>
 </g>
 </svg>
