@@ -3,50 +3,47 @@ package main
 import (
 	"bytes"
 	"errors"
-	// "io"
 	"log"
 	"os"
 	"os/exec"
-	"runtime/pprof"
 	"time"
 )
 
+// go build test.go
+// go run main.go ./test
 func main() {
-	err := profile(runApp, 100 * time.Second)
+	if len(os.Args) < 2 {
+		log.Fatal("Usage: go run main.go <executable_path>")
+	}
+	executablePath := os.Args[1]
+	duration := 30 * time.Second
+
+	err := profile(executablePath, duration)
 	if err != nil {
 		log.Fatal("Profiling failed:", err)
 	}
 }
 
-func profile(fn func(), duration time.Duration) error {
-	log.Println("Starting CPU profiling...")
+func profile(executablePath string, duration time.Duration) error {
+	log.Println("Starting profiling of:", executablePath)
 
-	f, err := os.Create("cpu.pprof")
-	if err != nil {
-		return err
-	}
-	defer f.Close()
+	cmd := exec.Command(executablePath)
+	cmd.Env = append(os.Environ(), "PPROF_PROFILE=1")
+	cmd.Start()
 
-	if err := pprof.StartCPUProfile(f); err != nil {
-		return err
-	}
-	fnDone := make(chan struct{})
-	
-	go func() {
-		fn()
-		close(fnDone)
-	}()
+	log.Printf("Started process: %s", executablePath)
+	time.Sleep(duration)
 
-	select {
-	case <-time.After(duration):
-		log.Println("Profiling duration reached.")
-	case <-fnDone:
-		log.Println("Function completed before timeout.")
+	if err := cmd.Process.Kill(); err != nil {
+		return errors.New("failed to kill process: " + err.Error())
 	}
 
-	pprof.StopCPUProfile()
-	log.Println("CPU profiling stopped.")
-	return generateFlamegraph("cpu.pprof", "flamegraph.svg")
+	profilePath := "cpu.pprof"
+	if _, err := os.Stat(profilePath); os.IsNotExist(err) {
+		return errors.New("profile file not found: make sure the executable generates cpu.pprof")
+	}
+
+	return generateFlamegraph(profilePath, "flamegraph.svg")
 }
 
 func generateFlamegraph(profilePath, outputPath string) error {
@@ -90,23 +87,4 @@ func generateFlamegraph(profilePath, outputPath string) error {
 	}
 	log.Println("Flamegraph generated at:", outputPath)
 	return nil
-}
-
-func runApp() {
-	start := time.Now()
-	for time.Since(start) < 10*time.Second {
-		_ = fib(10)
-	}
-}
-
-// O(n) for iterative version
-func fib(n int) int {
-	if n <= 1 {
-		return n
-	}
-	a, b := 0, 1
-	for i := 2; i <= n; i++ {
-		a, b = b, a+b
-	}
-	return b
 }

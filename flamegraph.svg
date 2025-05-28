@@ -431,84 +431,80 @@
 <text id="matched" x="1090.00" y="197" > </text>
 <g id="frames">
 <g >
-<title>runtime.semawakeup (49 samples, 5.79%)</title><rect x="1121.7" y="53" width="68.3" height="15.0" fill="rgb(234,137,32)" rx="2" ry="2" />
-<text  x="1124.65" y="63.5" >runtime..</text>
+<title>runtime.morestack (1 samples, 0.11%)</title><rect x="1188.7" y="149" width="1.3" height="15.0" fill="rgb(219,67,16)" rx="2" ry="2" />
+<text  x="1191.67" y="159.5" ></text>
 </g>
 <g >
-<title>runtime.startm (49 samples, 5.79%)</title><rect x="1121.7" y="85" width="68.3" height="15.0" fill="rgb(220,71,17)" rx="2" ry="2" />
-<text  x="1124.65" y="95.5" >runtime..</text>
+<title>runtime.pthread_cond_signal (1 samples, 0.11%)</title><rect x="1188.7" y="37" width="1.3" height="15.0" fill="rgb(211,28,6)" rx="2" ry="2" />
+<text  x="1191.67" y="47.5" ></text>
 </g>
 <g >
-<title>runtime.pthread_cond_signal (49 samples, 5.79%)</title><rect x="1121.7" y="37" width="68.3" height="15.0" fill="rgb(211,28,6)" rx="2" ry="2" />
-<text  x="1124.65" y="47.5" >runtime..</text>
+<title>runtime.notewakeup (1 samples, 0.11%)</title><rect x="1188.7" y="69" width="1.3" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="1191.67" y="79.5" ></text>
 </g>
 <g >
-<title>runtime.notewakeup (49 samples, 5.79%)</title><rect x="1121.7" y="69" width="68.3" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="1124.65" y="79.5" >runtime..</text>
+<title>time.Since (3 samples, 0.34%)</title><rect x="277.1" y="117" width="4.0" height="15.0" fill="rgb(215,46,11)" rx="2" ry="2" />
+<text  x="280.09" y="127.5" ></text>
 </g>
 <g >
-<title>runtime.libcCall (26 samples, 3.07%)</title><rect x="1064.5" y="69" width="36.2" height="15.0" fill="rgb(226,96,23)" rx="2" ry="2" />
-<text  x="1067.47" y="79.5" >run..</text>
+<title>runtime.goschedImpl (1 samples, 0.11%)</title><rect x="1188.7" y="117" width="1.3" height="15.0" fill="rgb(247,194,46)" rx="2" ry="2" />
+<text  x="1191.67" y="127.5" ></text>
 </g>
 <g >
-<title>runtime.pMask.set (1 samples, 0.12%)</title><rect x="1120.3" y="69" width="1.4" height="15.0" fill="rgb(205,4,0)" rx="2" ry="2" />
-<text  x="1123.26" y="79.5" ></text>
+<title>main.main (204 samples, 22.97%)</title><rect x="10.0" y="133" width="271.1" height="15.0" fill="rgb(227,101,24)" rx="2" ry="2" />
+<text  x="13.00" y="143.5" >main.main</text>
 </g>
 <g >
-<title>time.Since (767 samples, 90.66%)</title><rect x="49.1" y="117" width="1069.8" height="15.0" fill="rgb(215,46,11)" rx="2" ry="2" />
-<text  x="52.05" y="127.5" >time.Since</text>
+<title>runtime.asyncPreempt (35 samples, 3.94%)</title><rect x="1142.2" y="117" width="46.5" height="15.0" fill="rgb(243,174,41)" rx="2" ry="2" />
+<text  x="1145.16" y="127.5" >runt..</text>
 </g>
 <g >
-<title>time.runtimeNano (13 samples, 1.54%)</title><rect x="1100.7" y="101" width="18.2" height="15.0" fill="rgb(237,147,35)" rx="2" ry="2" />
-<text  x="1103.73" y="111.5" ></text>
+<title>runtime.asyncPreempt (10 samples, 1.13%)</title><rect x="263.8" y="117" width="13.3" height="15.0" fill="rgb(243,174,41)" rx="2" ry="2" />
+<text  x="266.81" y="127.5" ></text>
 </g>
 <g >
-<title>runtime.goschedImpl (50 samples, 5.91%)</title><rect x="1120.3" y="117" width="69.7" height="15.0" fill="rgb(247,194,46)" rx="2" ry="2" />
-<text  x="1123.26" y="127.5" >runtime..</text>
+<title>runtime.semawakeup (1 samples, 0.11%)</title><rect x="1188.7" y="53" width="1.3" height="15.0" fill="rgb(234,137,32)" rx="2" ry="2" />
+<text  x="1191.67" y="63.5" ></text>
 </g>
 <g >
-<title>runtime.nanotime (727 samples, 85.93%)</title><rect x="86.7" y="101" width="1014.0" height="15.0" fill="rgb(230,116,27)" rx="2" ry="2" />
-<text  x="89.71" y="111.5" >runtime.nanotime</text>
-</g>
-<g >
-<title>main.profile.func1 (796 samples, 94.09%)</title><rect x="10.0" y="149" width="1110.3" height="15.0" fill="rgb(253,225,53)" rx="2" ry="2" />
-<text  x="13.00" y="159.5" >main.profile.func1</text>
-</g>
-<g >
-<title>time.subMono (1 samples, 0.12%)</title><rect x="1118.9" y="117" width="1.4" height="15.0" fill="rgb(208,15,3)" rx="2" ry="2" />
-<text  x="1121.87" y="127.5" ></text>
-</g>
-<g >
-<title>main.fib (14 samples, 1.65%)</title><rect x="10.0" y="133" width="19.5" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="143.5" ></text>
-</g>
-<g >
-<title>runtime.nanotime1 (690 samples, 81.56%)</title><rect x="138.3" y="85" width="962.4" height="15.0" fill="rgb(213,40,9)" rx="2" ry="2" />
-<text  x="141.32" y="95.5" >runtime.nanotime1</text>
-</g>
-<g >
-<title>runtime.gopreempt_m (50 samples, 5.91%)</title><rect x="1120.3" y="133" width="69.7" height="15.0" fill="rgb(237,148,35)" rx="2" ry="2" />
-<text  x="1123.26" y="143.5" >runtime..</text>
-</g>
-<g >
-<title>all (846 samples, 100%)</title><rect x="10.0" y="165" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<title>all (888 samples, 100%)</title><rect x="10.0" y="165" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
 <text  x="13.00" y="175.5" ></text>
 </g>
 <g >
-<title>runtime.wakep (50 samples, 5.91%)</title><rect x="1120.3" y="101" width="69.7" height="15.0" fill="rgb(216,54,13)" rx="2" ry="2" />
-<text  x="1123.26" y="111.5" >runtime..</text>
+<title>runtime.startm (1 samples, 0.11%)</title><rect x="1188.7" y="85" width="1.3" height="15.0" fill="rgb(220,71,17)" rx="2" ry="2" />
+<text  x="1191.67" y="95.5" ></text>
 </g>
 <g >
-<title>main.runApp (782 samples, 92.43%)</title><rect x="29.5" y="133" width="1090.8" height="15.0" fill="rgb(227,101,24)" rx="2" ry="2" />
-<text  x="32.53" y="143.5" >main.runApp</text>
+<title>runtime.gopreempt_m (1 samples, 0.11%)</title><rect x="277.1" y="101" width="1.3" height="15.0" fill="rgb(237,148,35)" rx="2" ry="2" />
+<text  x="280.09" y="111.5" ></text>
 </g>
 <g >
-<title>runtime.pidlegetSpinning (1 samples, 0.12%)</title><rect x="1120.3" y="85" width="1.4" height="15.0" fill="rgb(250,211,50)" rx="2" ry="2" />
-<text  x="1123.26" y="95.5" ></text>
+<title>runtime.main (887 samples, 99.89%)</title><rect x="10.0" y="149" width="1178.7" height="15.0" fill="rgb(209,21,5)" rx="2" ry="2" />
+<text  x="13.00" y="159.5" >runtime.main</text>
 </g>
 <g >
-<title>runtime.morestack (50 samples, 5.91%)</title><rect x="1120.3" y="149" width="69.7" height="15.0" fill="rgb(219,67,16)" rx="2" ry="2" />
-<text  x="1123.26" y="159.5" >runtime..</text>
+<title>runtime.newstack (2 samples, 0.23%)</title><rect x="278.4" y="101" width="2.7" height="15.0" fill="rgb(248,197,47)" rx="2" ry="2" />
+<text  x="281.42" y="111.5" ></text>
+</g>
+<g >
+<title>runtime.goschedImpl (1 samples, 0.11%)</title><rect x="277.1" y="85" width="1.3" height="15.0" fill="rgb(247,194,46)" rx="2" ry="2" />
+<text  x="280.09" y="95.5" ></text>
+</g>
+<g >
+<title>runtime.casgstatus (1 samples, 0.11%)</title><rect x="277.1" y="69" width="1.3" height="15.0" fill="rgb(238,152,36)" rx="2" ry="2" />
+<text  x="280.09" y="79.5" ></text>
+</g>
+<g >
+<title>runtime.gopreempt_m (1 samples, 0.11%)</title><rect x="1188.7" y="133" width="1.3" height="15.0" fill="rgb(237,148,35)" rx="2" ry="2" />
+<text  x="1191.67" y="143.5" ></text>
+</g>
+<g >
+<title>main.power (683 samples, 76.91%)</title><rect x="281.1" y="133" width="907.6" height="15.0" fill="rgb(248,200,47)" rx="2" ry="2" />
+<text  x="284.08" y="143.5" >main.power</text>
+</g>
+<g >
+<title>runtime.wakep (1 samples, 0.11%)</title><rect x="1188.7" y="101" width="1.3" height="15.0" fill="rgb(216,54,13)" rx="2" ry="2" />
+<text  x="1191.67" y="111.5" ></text>
 </g>
 </g>
 </svg>
